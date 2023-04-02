@@ -2,6 +2,8 @@ var input = document.getElementById("numip");
 var button = document.getElementById("btn");
 var enteredTicketNumber;
 var flag = true;
+
+//Base URL Configuration
 var urlConfiguration = "https://thingworx.jira.com/browse/TW-";
 
 // If the user presses the "Search" button
@@ -51,3 +53,7 @@ function clearWarning(id) {
     flag = true;
     document.getElementById(id).innerHTML = "";
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    input.focus();
+});

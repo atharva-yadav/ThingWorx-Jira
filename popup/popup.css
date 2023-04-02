@@ -13,11 +13,10 @@
     font-family: var(--mainfont);
     background-color: var(--grey);
     color: var(--green);
-    color: #ffffff;
     text-align: center;
     padding: 0.8rem;
     width: 100%;
-    margin: 0.5rem 1rem 2rem 1rem;
+    font-size: 20px;
 }
 
 #wrapper {
@@ -28,15 +27,22 @@
     margin: 0;
     overflow: hidden;
     width: 348px;
+    background-color: var(--grey);
 }
 
-#twlogo {
-    margin: 1rem;
-    width: 10rem;
+#logo-wrapper{
+    box-shadow: 0px 1px 12px -4px var(--grey);
+    border-radius: 0.8rem;
+    margin: 10px;
+}
+
+.twlogo {
+    
+    /* width: 6rem; */
     background-color: white;
     padding: 6px 12px 6px 12px;
-    border-radius: 0.8rem;
-    box-shadow: 0px 1px 12px -4px var(--grey);
+    height: 30px;  
+    border-radius: 0.8rem;  
 }
 
 #btn {
@@ -82,7 +88,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--green);
     padding: 1rem;
     border-radius: 1rem;
     margin-top: -1rem;
@@ -98,17 +103,24 @@
     padding: 0.8rem;
     margin: 1rem 0 1rem 0;
     border-radius: 1rem;
-    width: 88%;
+    width: 78%;
     text-align: center;
     border: 1px solid var(--grey);
     font-family: var(--mainfont);
     font-weight: 500;
     font-size: 1rem;
+    box-shadow: 0px 3px 11px 0px #ffffff5e;
 }
+
+#numip:focus {
+    outline: none;
+    border: none;
+}
+
 
 #warning {
     height: 0.8rem;
-    color: red;
+    color: rgb(237, 118, 118);
     font-size: 12px;
     margin-top: -10px;
 }

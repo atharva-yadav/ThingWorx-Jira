@@ -1,1 +1,1 @@
-- Update URL Configuration
+- URL Configuration
