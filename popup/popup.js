@@ -1,6 +1,5 @@
 var input = document.getElementById("numip");
 var button = document.getElementById("btn");
-var enteredTicketNumber;
 var flag = true;
 
 //Base URL Configuration
@@ -8,10 +7,10 @@ var urlConfiguration = "https://thingworx.jira.com/browse/TW-";
 
 // If the user presses the "Search" button
 button.addEventListener("click", function () {
-    var ticketNum = validateInput(input);
-    var url = urlConfiguration.concat(ticketNum);
+    let ticketNum = validateInput(input);
+    let url = urlConfiguration.concat(ticketNum);
 
-    if (flag && ticketNum != undefined) {
+    if (flag != false && ticketNum != undefined) {
         window.open(url, '_blank');
     }
 });
@@ -27,7 +26,7 @@ input.addEventListener("keypress", function (event) {
 // Checks for not null values and only numbers
 function validateInput(ip) {
 
-    var processedInput = ip.value.trim();
+    let processedInput = ip.value.trim();
     clearWarning("warning");
 
     if (processedInput === "" || processedInput == null) {

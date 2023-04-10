@@ -1,1 +1,2 @@
-- URL Configuration
+- URL Configuration update for diff project (radio/toogler use)
+- Open by Key Shortcut -- done
